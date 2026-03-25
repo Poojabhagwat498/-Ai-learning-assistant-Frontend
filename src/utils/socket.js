@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io(process.env.VITE_URL, {
+const socket = io(import.meta.env.VITE_URL, {
   transports: ["websocket"],
 });
 

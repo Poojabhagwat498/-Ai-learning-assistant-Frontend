@@ -48,9 +48,8 @@ const DocumentDetailPage = () => {
       return filePath;
     }
 
-    const baseUrl =
-      process.env.REACT_APP_API_URL || process.env.VITE_URL;
-
+    const baseUrl = import.meta.env.VITE_URL;
+    
     return `${baseUrl}${filePath.startsWith("/") ? "" : "/"}${filePath}`;
   };
 

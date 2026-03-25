@@ -4,7 +4,7 @@ import socket from "../utils/socket";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API = process.env.VITE_URL;
+const API = import.meta.env.VITE_URL;
 
 const NotificationBell = () => {
   const [count, setCount] = useState(0);
