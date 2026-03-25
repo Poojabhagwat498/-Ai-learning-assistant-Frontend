@@ -17,7 +17,7 @@ import FlashCard from "./pages/flashcards/FlashCard";
 import QuizTake from "./pages/quizzes/QuizTake";
 import QuizResult from "./pages/quizzes/QuizResult";
 
-import ProfilePage from "./pages/Profile/ProfilePage";
+import ProfilePage from "./pages/Profile/profilePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 import TodoPage from "./pages/TodoPage";
