@@ -2,57 +2,57 @@ export const BASE_URL = import.meta.env.VITE_URL;
 
 export const API_PATHS = {
   AUTH: {
-    REGISTER: "/api/auth/register",
-    LOGIN: "/api/auth/login",
-    GET_PROFILE: "/api/auth/profile",
-    UPDATE_PROFILE: "/api/auth/profile",
-    CHANGE_PASSWORD: "/api/auth/change-password",
+    REGISTER: "/auth/register",
+    LOGIN: "/auth/login",
+    GET_PROFILE: "/auth/profile",
+    UPDATE_PROFILE: "/auth/profile",
+    CHANGE_PASSWORD: "/auth/change-password",
   },
 
   DOCUMENTS: {
-    UPLOAD: "/api/documents/upload",
-    GET_DOCUMENTS: "/api/documents",
-    GET_DOCUMENT_BY_ID: (id) => `/api/documents/${id}`,
-    UPDATE_DOCUMENT: (id) => `/api/documents/${id}`,
-    DELETE_DOCUMENT: (id) => `/api/documents/${id}`,
+    UPLOAD: "/documents/upload",
+    GET_DOCUMENTS: "/documents",
+    GET_DOCUMENT_BY_ID: (id) => `/documents/${id}`,
+    UPDATE_DOCUMENT: (id) => `/documents/${id}`,
+    DELETE_DOCUMENT: (id) => `/documents/${id}`,
   },
 
   AI: {
-    GENERATE_FLASHCARDS: "/api/ai/generate-flashcards",
-    GENERATE_QUIZ: "/api/ai/generate-quiz",
-    GENERATE_SUMMARY: "/api/ai/generate-summary",
-    CHAT: "/api/ai/chat",
-    EXPLAIN_CONCEPT: "/api/ai/explain-concept",
+    GENERATE_FLASHCARDS: "/ai/generate-flashcards",
+    GENERATE_QUIZ: "/ai/generate-quiz",
+    GENERATE_SUMMARY: "/ai/generate-summary",
+    CHAT: "/ai/chat",
+    EXPLAIN_CONCEPT: "/ai/explain-concept",
     GET_CHAT_HISTORY: (documentId) =>
-      `/api/ai/chat-history/${documentId}`,
+      `/ai/chat-history/${documentId}`,
   },
 
   FLASHCARDS: {
-    GET_ALL_FLASHCARD_SETS: "/api/flashcards",
+    GET_ALL_FLASHCARD_SETS: "/flashcards",
     GET_FLASHCARDS_FOR_DOC: (documentId) =>
-      `/api/flashcards/${documentId}`,
+      `/flashcards/${documentId}`,
     REVIEW_FLASHCARD: (cardId) =>
-      `/api/flashcards/${cardId}/review`,
+      `/flashcards/${cardId}/review`,
     TOGGLE_STAR: (cardId) =>
-      `/api/flashcards/${cardId}/star`,
+      `/flashcards/${cardId}/star`,
     DELETE_FLASHCARD_SET: (id) =>
-      `/api/flashcards/${id}`,
+      `/flashcards/${id}`,
   },
 
   QUIZZES: {
     GET_QUIZZES_FOR_DOC: (documentId) =>
-      `/api/quizzes/${documentId}`,
+      `/quizzes/${documentId}`,
     GET_QUIZ_BY_ID: (id) =>
-      `/api/quizzes/quiz/${id}`,
+      `/quizzes/quiz/${id}`,
     SUBMIT_QUIZ: (id) =>
-      `/api/quizzes/${id}/submit`,
+      `/quizzes/${id}/submit`,
     GET_QUIZ_RESULTS: (id) =>
-      `/api/quizzes/${id}/results`,
+      `/quizzes/${id}/results`,
     DELETE_QUIZ: (id) =>
-      `/api/quizzes/${id}`,
+      `/quizzes/${id}`,
   },
 
   PROGRESS: {
-    GET_DASHBOARD: "/api/progress/dashboard",
+    GET_DASHBOARD: "/progress/dashboard",
   },
 };
