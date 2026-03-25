@@ -5,7 +5,7 @@ import LoginPage from "./pages/Auth/LoginPage";
 import RegisterPage from "./pages/Auth/RegisterPage";
 
 import AppLayout from "./components/layout/AppLayout";
-import ProtectedRoute from "./components/auth/ProtectedRoute";
+import ProtectedRoute from "./components/auth/protectedRoute";
 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import DocumentListPage from "./pages/documents/DocumentListPage";
@@ -69,7 +69,7 @@ const App = () => {
   }
 
 
-  
+
   return (
     <Router>
 
