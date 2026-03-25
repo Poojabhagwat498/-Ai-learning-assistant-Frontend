@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 
-const API = "http://localhost:8000/api";
+const API = process.env.VITE_URL;
 
 const GroupStudy = () => {
   const [groupName, setGroupName] = useState("");
