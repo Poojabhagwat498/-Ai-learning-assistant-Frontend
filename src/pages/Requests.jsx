@@ -88,7 +88,7 @@ const Requests = () => {
         <div key={req._id} className="border p-4 rounded mb-3">
           <p className="font-medium">{req.groupId.name}</p>
           <p className="text-sm text-gray-500">
-            Invited by: {req.sender.name}
+            Invited by:Sneha Patil {req.sender.name}
           </p>
 
           <div className="mt-2 flex gap-2">
